@@ -1,0 +1,112 @@
+body {
+    background-color: #431514;
+}
+
+#rozvrh table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+#rozvrh td, th {
+    min-width: 50px;
+    min-height: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#rozvrh th {
+    border: 1px solid #fff;
+    color: #fff; 
+    font-size: 16px;
+    white-space: pre;
+    background-color: #431514;
+}
+
+#rozvrh td {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#rozvrh{
+    display:inline-block;
+    position: relative;
+    z-index: 999;
+}
+
+#logoparent{
+    width : 400px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index:-1;
+    color: grey;
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#legenda {
+    color: white;
+}
+
+.active {
+    color: #02b517;
+    font-weight: bold;
+}
+
+
+.active img {
+    position: relative;
+    top: 3px;
+}
+.next {
+    color: #d69600;
+    font-weight: bold;
+}
+.next img {
+    position: relative;
+    top: 3px;
+}
+
+.note {
+    font-weight: normal;
+}
+
+#donate {
+    position: absolute;
+    width: 200px;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+}
+
+#donate img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#info{
+    color: white;
+    font-size: 20px;
+}
+
+.infoimg {
+    width: 200px;
+    height: auto;
+}
+
+#info td{
+    max-width: 300px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.zpet {
+    width: 100px;
+    height: auto;
+}
