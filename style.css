@@ -1,0 +1,143 @@
+/* 14.3.2023 */
+body {
+    background-color: #431514;
+}
+
+#rozvrh table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 10px;
+}
+
+#rozvrh td, th {
+    vertical-align: middle;
+    text-align: center;
+    min-width: 15px;
+    min-height: 9px;
+    max-width: 90px;
+    max-height: 50px;
+}
+
+.cell {
+    min-width: 50px;
+    width: 7vw;
+}
+
+
+#rozvrh th {
+    border: 1px solid #fff;
+    color: #fff; 
+    font-size: 16px;
+    white-space: pre;
+    background-color: #431514;
+}
+
+#rozvrh td {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#rozvrh img {
+    width: 100%;
+    height: 100%;
+}
+
+#rozvrh{
+    display:block;
+    position: relative;
+    z-index: 1;
+}
+
+/* .cell {
+    min-width: 15px;
+    min-height: 9px;
+    max-width: 90px;
+    max-height: 50px;
+ } */
+
+.first {
+    width: 30px;
+    height: 17px;
+    min-width: 30px;
+    min-height: 17px;
+    max-width: 30px;
+    max-height: 17px;
+}
+
+#logoparent{
+    width : 400px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index:-1;
+    color: grey;
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#legenda {
+    color: white;
+}
+
+.active {
+    color: #02b517;
+    font-weight: bold;
+}
+
+
+.active img {
+    position: relative;
+    top: 3px;
+}
+.next {
+    color: #d69600;
+    font-weight: bold;
+}
+.next img {
+    position: relative;
+    top: 3px;
+}
+
+.note {
+    font-weight: normal;
+}
+
+#donate {
+    position: absolute;
+    width: 200px;
+    top: 5px;
+    right: 5px;
+    z-index: -1;
+}
+
+#donate img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#info{
+    color: white;
+    font-size: 20px;
+}
+
+.infoimg {
+    width: 200px;
+    height: auto;
+}
+
+#info td{
+    max-width: 300px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.zpet {
+    width: 100px;
+    height: auto;
+}

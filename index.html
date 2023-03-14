@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--14.3.2023-->
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMFBDQGCMF"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WMFBDQGCMF');
+        </script>
+        <title>Stellaria Eventy</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="imgs/favicon.png" type="image/png">
+        <script type="text/javascript" src="script.js"></script>
+        <meta lang="cs" name="author" content="Sien">
+        <meta lang="cs" name="description" content="Online rozvrh eventů ze hry Stellaria">
+    </head>
+    <body onload="go()">
+        <div id="logoparent">
+            <div id="legenda">
+                Co znamenají barvy?
+                <div class="active"><img src="imgs/green.png" alt="Aktivní event je označen zelenou barvou"/> AKTIVNÍ EVENT</div>
+                <div class="active note">pokud nesvítí, není žádný event aktivní</div>
+                <div class="next"><img src="imgs/yellow.png" alt="Následující event je označen žlutou barvou"/> NÁSLEDUJÍCÍ EVENT</div>
+                <div class="next note">pokud nesvítí, není dnes už žádný další event</div>
+                </br>
+            </div>
+            <img src="imgs/logo2.webp" id="logo">
+            vyrobil Sien (WelsyCZ#0198) v roce 2023
+        </div>
+        <div id="rozvrh">
+            <table id="PO"></table>
+            <table id="UT"></table>
+            <table id="ST"></table>
+            <table id="CT"></table>
+            <table id="PA"></table>
+            <table id="SO"></table>
+            <table id="NE"></table>
+            <div id="donate">
+                <a href="donate.html">
+                    <img src="imgs/donate.png" alt="Kup mi kafe!">
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
