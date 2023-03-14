@@ -44,7 +44,7 @@ body {
 #rozvrh{
     display:block;
     position: relative;
-    z-index: 999;
+    z-index: 1;
 }
 
 /* .cell {
@@ -111,7 +111,7 @@ body {
     width: 200px;
     top: 5px;
     right: 5px;
-    z-index: 1;
+    z-index: -1;
 }
 
 #donate img {
