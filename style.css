@@ -3,16 +3,25 @@ body {
 }
 
 #rozvrh table {
-    border-collapse: collapse;
-    margin: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 10px;
 }
 
 #rozvrh td, th {
-    min-width: 50px;
-    min-height: 20px;
     vertical-align: middle;
     text-align: center;
+    min-width: 15px;
+    min-height: 9px;
+    max-width: 90px;
+    max-height: 50px;
 }
+
+.cell {
+    min-width: 50px;
+    width: 7vw;
+}
+
 
 #rozvrh th {
     border: 1px solid #fff;
@@ -27,10 +36,31 @@ body {
     color: #fff;
 }
 
+#rozvrh img {
+    width: 100%;
+    height: 100%;
+}
+
 #rozvrh{
-    display:inline-block;
+    display:block;
     position: relative;
     z-index: 999;
+}
+
+/* .cell {
+    min-width: 15px;
+    min-height: 9px;
+    max-width: 90px;
+    max-height: 50px;
+ } */
+
+.first {
+    width: 30px;
+    height: 17px;
+    min-width: 30px;
+    min-height: 17px;
+    max-width: 30px;
+    max-height: 17px;
 }
 
 #logoparent{

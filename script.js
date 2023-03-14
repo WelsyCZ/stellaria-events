@@ -1,29 +1,30 @@
 let days = ["PO","UT","ST","CT","PA","SO","NE"];
+let imgpath = "imgs/";
 let imgs = {
-    "boss" : "imgs/double_drop_boss.png",
-    "mise" : "imgs/double_drop_chardev_points.png",
-    "dung" : "imgs/double_drop_dungeon.png",
-    "ryby" : "imgs/double_drop_fish.png",
-    "metin" : "imgs/double_drop_metin.png",
-    "tezba" : "imgs/double_drop_mining.png",
-    "war89" : "imgs/empire_war89.png",
-    "war119" : "imgs/empire_war119.png",
-    "war149" : "imgs/empire_war149.png",
-    "war150" : "imgs/empire_war150.png",
-    "xp" : "imgs/event_double_exp.png",
-    "poklad" : "imgs/event_gold_case.png",
-    "zacar" : "imgs/event_switch_1_5.png",
-    "pozeh" : "imgs/event_switch_6_7.png",
-    "runy" : "imgs/event_switch_runes.png",
-    "arena89" : "imgs/pvp_war89.png",
-    "arena119" : "imgs/pvp_war119.png",
-    "arena149" : "imgs/pvp_war149.png",
-    "arena150" : "imgs/pvp_war150.png",
-    "lms89" : "imgs/pvp_war_lms89.png",
-    "lms119" : "imgs/pvp_war_lms119.png",
-    "lms149" : "imgs/pvp_war_lms149.png",
-    "lms150" : "imgs/pvp_war_lms150.png",
-    "bg" : "imgs/bg.png"
+    "boss" : imgpath+"double_drop_boss.png",
+    "mise" : imgpath+"double_drop_chardev_points.png",
+    "dung" : imgpath+"double_drop_dungeon.png",
+    "ryby" : imgpath+"double_drop_fish.png",
+    "metin" : imgpath+"double_drop_metin.png",
+    "tezba" : imgpath+"double_drop_mining.png",
+    "war89" : imgpath+"empire_war89.png",
+    "war119" : imgpath+"empire_war119.png",
+    "war149" : imgpath+"empire_war149.png",
+    "war150" : imgpath+"empire_war150.png",
+    "xp" : imgpath+"event_double_exp.png",
+    "poklad" : imgpath+"event_gold_case.png",
+    "zacar" : imgpath+"event_switch_1_5.png",
+    "pozeh" : imgpath+"event_switch_6_7.png",
+    "runy" : imgpath+"event_switch_runes.png",
+    "arena89" : imgpath+"pvp_war89.png",
+    "arena119" : imgpath+"pvp_war119.png",
+    "arena149" : imgpath+"pvp_war149.png",
+    "arena150" : imgpath+"pvp_war150.png",
+    "lms89" : imgpath+"pvp_war_lms89.png",
+    "lms119" : imgpath+"pvp_war_lms119.png",
+    "lms149" : imgpath+"pvp_war_lms149.png",
+    "lms150" : imgpath+"pvp_war_lms150.png",
+    "bg" : imgpath+"bg.png"
 };
 let events = {
     "PO" : ["boss","metin","zacar","ryby","tezba","lms89","dung","war119","lms150","arena149","boss"],
@@ -147,6 +148,7 @@ function createTHead(table, data, desc){
     row.appendChild(firstcell);
     for(let e of data){
         let th = document.createElement("th");
+        th.setAttribute("class","cell");
         let text = document.createTextNode(e);
         th.appendChild(text);
         row.appendChild(th);
@@ -157,6 +159,7 @@ function createTBody(table, data){
     let tbody = table.createTBody();
     let row = tbody.insertRow();
     let firstcell = document.createElement("td");
+    firstcell.setAttribute("class","first");
     firstcell.rowSpan = 0;
     row.appendChild(firstcell);
     for(let e of data){
@@ -165,6 +168,7 @@ function createTBody(table, data){
         td.style.backgroundImage = "url('" + imgs["bg"]+"')";
         td.style.backgroundRepeat = "no-repeat";
         td.style.backgroundSize = "cover";
+        td.setAttribute("class","cell");
         let img = document.createElement("img");
         img.src = imgs[e];
         img.alt = e;
