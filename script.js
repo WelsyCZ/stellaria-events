@@ -1,3 +1,4 @@
+// 14.3.2023
 let days = ["PO","UT","ST","CT","PA","SO","NE"];
 let imgpath = "imgs/";
 let imgs = {
