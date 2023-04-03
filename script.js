@@ -31,7 +31,7 @@ let imgs = {
     "bg" : imgpath+"bg.png"
 };
 let events = {
-    "PO" : ["boss","metin","zacar","ryby","tezba","lms149","dung","war119","lms150","arena149","boss"],
+    "PO" : ["boss","metin","zacar","ryby","tezba","lms149","dung","war119","lms89","arena150","boss"],
     "UT" : ["metin","boss","ryby","tezba","pozeh","runy","tezba","boss","metin","arena89","lms150","arena55","metin"],
     "ST" : ["xp","pozeh","runy","poklad","lms119","mise","war150","lms55","arena149","xp"],
     "CT" : ["dung","poklad","ryby","tezba","metin","boss","arena150","lms89","arena119","dung"],
